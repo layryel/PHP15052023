@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="pt-br">
 
@@ -26,18 +25,15 @@
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav flex-grow-1">
                             <li class="nav-item">
-                                 <a class="nav-link text-white active " href="cadastrar.php">Cadastrar</a>
+                                 <a class="nav-link text-white disabled " href="">Cadastrar</a>
                             </li>
                             <li class="nav-item">
-                                 <a class="nav-link text-white" href="consulta.php">Consultar</a>
+                                 <a class="nav-link text-white" href="phpaula/consulta.php">Consultar</a>
                             </li>
                         </ul>
                      </div>
                 </div>
         </nav>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-            </div>
         </div>
         <main class="flex-fill">
             <div class="container">
@@ -47,33 +43,35 @@
                 </div>
                 
                 <form class=" mt-3 " method="POST" action="consulta.php">
+                    
+                          
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                                    <input type="text" class="form-control" id="nome" name="nome" value="nome" placeholder="Maria Silva">
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" name="nome" placeholder="Maria Silva">
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Telefone</label>
-                                    <input type="number" class="form-control" id="telefone" name="telefone" value="telefone" placeholder="(xx) xxxxxx-xxxx">
+                                    <input type="number" class="form-control" id="exampleFormControlInput1" name="telefone" placeholder="(xx) xxxxxx-xxxx">
                                 </div>
 
                                 <legenda>Origem</legenda>
-                                <select class="form-select" id="origem" name="origem" aria-label="Default select example">
-                                    <option value="celular">Celular</option>
-                                    <opition value="telefone">Telefone</opition>
+                                <select class="form-select" aria-label="Default select example" name="origem">
+                                    <option selected value="celular">Celular</option>
+                                    <option value="telefone">Telefone Fixo</option>
                                     <option value="whatsapp">WhatsApp</option>
-                                    <option value="email">e-mail</option>
+                                    <option value="email">E-Mail</option>
                                 </select>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Data do contato</label>
-                                    <input type="date" class="form-control" id="datadecont" name="datadecont"value="datadecont" placeholder="aaaa/mm/dd">
+                                    <input type="date" class="form-control" id="exampleFormControlInput1" name="datadecont" placeholder="name@example.com">
                                   </div>
                                   <div class="mb-3">
                                     <label for="exampleFormControlTextarea1" class="form-label">Observação</label>
-                                    <textarea class="form-control" id="observacao" name="observacao" value="observacao" rows="3"></textarea>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" name="observacao" rows="3"></textarea>
                                   </div>
                          
-                                  <input type="submit" value="cadastrar" name="cadastrar">
+                                  <input type="submit" value="cadastrar" name="cadastrar" id="cadastrar">
                 </form>
             </div>
         </main>
